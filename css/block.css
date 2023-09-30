@@ -1,0 +1,398 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    max-width: 1400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.header__item {
+    display: flex;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.header__btn {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+}
+
+.sign__btn {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(48, 110, 247, 1);
+    width: 120px;
+    padding: 12px 20px;
+    border-radius: 15px;
+}
+
+.btn__glav {
+    color: rgba(48, 110, 247, 1);
+}
+
+.choose__texs {
+    font-size: 75px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.choose__subtext {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.block__blog {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.blog__wrapper {
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.blog__subtext {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgba(130, 130, 130, 1);
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.card__blog {
+    border: 1px solid rgba(112, 112, 112, 1);
+    width: 412px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.block__blog {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.logo__card {
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.main__blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.predfooter__img {
+    padding-top: 180px;
+}
+
+.predfooter__img {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.homepage__btns {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(50, 108, 249, 1);
+    width: 207px;
+    padding: 18px 21px;
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.two__wrapper {
+    font-size: 100px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.two__title {
+    font-size: 43px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer__texts {
+    font-size: 28px;
+    font-weight: 500px;
+    color: rgba(112, 112, 112, 1);
+}
+
+.text__footer {
+    display: flex;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer {
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.main__footer {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 600px;
+}
+
+.green__title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.green__subtitle {
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(112, 112, 112, 1);
+}
+
+.main__text_end {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.header__end {
+    padding-top: 60px;
+    padding-bottom: 180px;
+}
+
+.open {
+    display: flex !important;
+}
+
+.burger {
+    display: none;
+    position: fixed;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    margin-left: 620px;
+}
+
+.burger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #ffffff;
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+.burger.active span { transform: scale(0);}
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0,-50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0,50%);
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .main__blog {
+        display: block;
+    }
+
+    .header {
+        max-width: 780px;
+    }
+
+    .footer {
+        display: none;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .two__title {
+        font-size: 28px;
+    }
+
+    .header {
+        max-width: 610px;
+    }
+}
+
+@media (max-width: 500px) {
+    .header__nav {
+        display: none;
+    }
+
+    .header  {
+        max-width: 400px;
+    }
+
+    .two__wrapper  {
+        font-size: 70px;
+    }
+
+    .green__subtitle  {
+        font-size: 21px;
+    }
+
+    .choose__subtext  {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 420px) {
+    .card__blog {
+        width: 370px;
+    }
+
+    .header  {
+        max-width: 340px;
+    }
+
+    .two__title {
+        font-size: 22px;
+    }
+
+    .two__wrapper {
+        font-size: 60px;
+    } 
+
+    .green__subtitle {
+        font-size: 19px;
+    }
+
+    .green__title {
+        font-size: 23px;
+    }
+
+    .header {
+        max-width: 350px;
+    }
+
+    .burger {display: flex;}
+
+    .header__buttn {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .header__item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: #000000;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .header li {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+
+    .burger {
+        margin-left: 320px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .green__title {
+        font-size: 20px;
+    } 
+
+    .green__subtitle {
+        font-size: 17px;
+    }
+
+    
+}
